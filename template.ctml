@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Common Lisp Portability Library Status</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <input type="text" class="filter" placeholder="Find..." autofocus />
+        <ul class="support-listing header" iterate="implementations">
+          <li class="support" lquery="(add-class *) (attr :title *)">
+            <span class="name" lquery="(text *)">UNKCL</span>
+          </li>
+        </ul>
+      </header>
+      <ul class="libraries" iterate="libraries">
+        <li>
+          <article class="library" lquery="(attr :id (id *)) (add-class name)">
+            <h2 class="name"><a lquery="(attr :href link) (text name)">LIBRARY</a></h2>
+            <ul class="support-listing" iterate="support-table">
+              <li class="support" lquery="(add-class implementation) (attr :title implementation :style (support-style *)) (data :completeness completeness)">
+                <span class="implementation name" lquery="(text implementation)">UNKCL</span>
+                <span class="completeness" lquery="(text completeness)">1.0</span>
+                <c:when test="notes">
+                  <a class="note" lquery="(attr :href (link *))">*</a>
+                </c:when>
+              </li>
+            </ul>
+            <p class="description" lquery="(text description)">Description</p>
+            <ol class="notes" iterate="support-table">
+              <c:when test="notes">
+                <li class="note" lquery="(attr :id (id *)) (text notes)">
+                  <span class="implementation name" lquery="(text implementation)">UNKL</span>
+                  Notes
+                </li>
+              </c:when>
+            </ol>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      Made by <a href="https://shinmera.com">Nicolas Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>.
+    </footer>
+  </body>
+</html>
