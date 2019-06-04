@@ -1,3 +1,5 @@
+# [Please see the full site](https://shinmera.github.io/portability)
+
 # About
 This is a metadata project to document the coverage of portability libraries across the many Lisp implementations. It was created in the hopes that this would allow people a quicker overview of non-standard features and encourage people to contribute to the projects and implementations and close the gaps.
 
