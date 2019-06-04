@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8"/>
     <title>Common Lisp Portability Library Status</title>
@@ -44,5 +44,6 @@
     <footer>
       Made by <a href="https://shinmera.com">Nicolas Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>.
     </footer>
+    <script type="text/javascript" src="search.js"></script>
   </body>
 </html>

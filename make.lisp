@@ -82,11 +82,10 @@
   (with-open-file (stream output :direction :output
                                  :element-type 'character
                                  :if-exists :supersede)
-    (let ((plump:*tag-dispatchers* plump:*xml-tags*))
-      (plump:serialize (clip:process (plump:parse (pathname template))
-                                     :implementations *known-implementations*
-                                     :libraries libraries)
-                       stream))))
+    (plump:serialize (clip:process (plump:parse (pathname template))
+                                   :implementations *known-implementations*
+                                   :libraries libraries)
+                     stream)))
 
 (defun make ()
   (compile-index (read-data)))

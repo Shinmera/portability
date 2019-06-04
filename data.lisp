@@ -11,7 +11,7 @@
 (atomics
  :link "https://shinmera.github.io/atomics"
  :description "Thin wrapper over atomic operators such as Compare and Swap (CAS)."
- :support (:allegro :ccl :ecl :lispworks (:sbcl :notes "foo")))
+ :support (:allegro :ccl :ecl :lispworks :sbcl))
 
 (definitions
  :link "https://shinmera.github.io/definitions"
