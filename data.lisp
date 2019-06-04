@@ -19,6 +19,11 @@
  :default-completeness 0.75
  :support (:ccl :clasp :sbcl))
 
+(dissect
+ :link "https://shinmera.github.io/dissect"
+ :description "Capturing the call stack and inspecting frames."
+ :support (:abcl :allegro :ccl :clisp :ecl :sbcl))
+
 (trivial-garbage
  :link "https://common-lisp.net/project/trivial-garbage/"
  :description "Access to GC related tasks such as weak pointers, weak tables, and finalizers."
