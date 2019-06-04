@@ -1,4 +1,5 @@
-(asdf:load-system :clip)
+#+quicklisp (ql:quickload :clip)
+#-quicklisp (asdf:load-system :clip)
 
 (defvar *this* #.(or *load-pathname* (error "Please LOAD this file.")))
 (defparameter *known-implementations*
