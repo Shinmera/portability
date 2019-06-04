@@ -82,9 +82,10 @@
   (with-open-file (stream output :direction :output
                                  :element-type 'character
                                  :if-exists :supersede)
-    (plump:serialize (clip:process (plump:parse (pathname template))
-                                   :implementations *known-implementations*
-                                   :libraries libraries)
+    (plump:serialize (plump-dom:strip
+                      (clip:process (plump:parse (pathname template))
+                                    :implementations *known-implementations*
+                                    :libraries libraries))
                      stream)))
 
 (defun make ()
