@@ -3,8 +3,8 @@
 
 (defvar *this* #.(or *load-pathname* (error "Please LOAD this file.")))
 (defparameter *known-implementations*
-  '(:abcl :allegro :ccl :clasp :corman :ecl :gcl
-    :genera :jscl :lispworks :mcl :mkcl :mocl
+  '(:abcl :allegro :ccl :clasp :clisp :corman :ecl
+    :gcl :genera :jscl :lispworks :mcl :mkcl :mocl
     :mezzano :sbcl :scl :sicl :xcl))
 
 (defun unmaintained-p (implementation)
