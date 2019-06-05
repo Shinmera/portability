@@ -68,3 +68,8 @@
  :link "https://github.com/Zulu-Inuoe/trivial-cltl2"
  :description "Some of the extensions described in CLtL2 that were not included in ANSI."
  :support (:abcl :allegro :ccl :cmucl :ecl :sbcl))
+
+(cl-environments
+ :link "https://github.com/alex-gutev/cl-environments"
+ :description "Environment introspection as described in CLtL2."
+ :support (:allegro :ccl :cmucl :lispworks :sbcl))
