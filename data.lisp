@@ -53,3 +53,13 @@
  :link "https://common-lisp.net/project/usocket/"
  :description "POSIX/BSD sockets to establish TCP or UPD connections and servers."
  :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mcl :mocl :sbcl :scl))
+
+(cffi
+ :link "https://common-lisp.net/project/cffi/"
+ :description "Direct memory manipulation and interaction with foreign libraries following the C ABIs."
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mcl :mkcl :scl :sbcl))
+
+(trivial-backtrace
+ :link "https://common-lisp.net/project/trivial-backtrace/"
+ :description "Printing the current stack trace to a string."
+ :support (:allegro :ccl :clisp :cmucl :lispworks :mcl :sbcl :scl))
