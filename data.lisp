@@ -63,3 +63,8 @@
  :link "https://common-lisp.net/project/trivial-backtrace/"
  :description "Printing the current stack trace to a string."
  :support (:allegro :ccl :clisp :cmucl :lispworks :mcl :sbcl :scl))
+
+(trivial-cltl2
+ :link "https://github.com/Zulu-Inuoe/trivial-cltl2"
+ :description "Some of the extensions described in CLtL2 that were not included in ANSI."
+ :support (:abcl :allegro :ccl :cmucl :ecl :sbcl))
