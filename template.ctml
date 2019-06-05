@@ -4,13 +4,21 @@
     <meta charset="utf-8"/>
     <title>Common Lisp Portability Library Status</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"/>
   </head>
   <body>
     <main>
+      <input type="checkbox" id="hide-unmaintained" checked />
       <header>
-        <input type="text" class="filter" placeholder="Find..." autofocus />
+        <nav>
+          <input type="text" class="filter" placeholder="Find..." autofocus />
+          <label for="hide-unmaintained">
+            <i class="fas fa-eye" title="Show unmaintained implementations"></i>
+            <i class="fas fa-eye-slash" title="Hide unmaintained implementations"></i>
+          </label>
+        </nav>
         <ul class="support-listing header" iterate="implementations">
-          <li class="support" lquery="(add-class *) (attr :title *)">
+          <li class="support" lquery="(add-class *) (add-class (when (unmaintained-p *) :unmaintained)) (attr :title *)">
             <span class="name" lquery="(text *)">UNKCL</span>
           </li>
         </ul>
@@ -20,7 +28,7 @@
           <article class="library" lquery="(attr :id (id *)) (add-class name)">
             <h2 class="name"><a lquery="(attr :href link) (text name)">LIBRARY</a></h2>
             <ul class="support-listing" iterate="support-table">
-              <li class="support" lquery="(add-class implementation) (attr :title implementation :style (support-style *)) (data :completeness completeness)">
+              <li class="support" lquery="(add-class implementation) (add-class (when (unmaintained-p implementation) :unmaintained)) (attr :title implementation :style (support-style *)) (data :completeness completeness)">
                 <span class="implementation name" lquery="(text implementation)">UNKCL</span>
                 <span class="completeness" lquery="(text completeness)">1.0</span>
                 <c:when test="notes">

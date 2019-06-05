@@ -7,6 +7,9 @@
     :genera :jscl :lispworks :mcl :mkcl :mocl
     :mezzano :sbcl :scl :sicl :xcl))
 
+(defun unmaintained-p (implementation)
+  (find implementation '(:gcl :genera :mcl :scl :xcl)))
+
 (defun file (relative)
   (merge-pathnames relative (make-pathname :name NIL :type NIL :version NIL :defaults *this*)))
 
@@ -82,11 +85,12 @@
   (with-open-file (stream output :direction :output
                                  :element-type 'character
                                  :if-exists :supersede)
-    (plump:serialize (plump-dom:strip
-                      (clip:process (plump:parse (pathname template))
-                                    :implementations *known-implementations*
-                                    :libraries libraries))
-                     stream)))
+    (let ((plump:*tag-dispatchers* plump:*html-tags*))
+      (plump:serialize (plump-dom:strip
+                        (clip:process (plump:parse (pathname template))
+                                      :implementations *known-implementations*
+                                      :libraries libraries))
+                       stream))))
 
 (defun make ()
   (compile-index (read-data)))
