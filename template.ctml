@@ -9,12 +9,17 @@
   <body>
     <main>
       <input type="checkbox" id="hide-unmaintained" checked />
+      <input type="checkbox" id="hide-descriptions" />
       <header>
         <nav>
           <input type="text" class="filter" placeholder="Find..." autofocus />
           <label for="hide-unmaintained">
-            <i class="fas fa-eye" title="Show unmaintained implementations"></i>
-            <i class="fas fa-eye-slash" title="Hide unmaintained implementations"></i>
+            <i class="fas fa-fw fa-eye" title="Show unmaintained implementations"></i>
+            <i class="fas fa-fw fa-eye-slash" title="Hide unmaintained implementations"></i>
+          </label>
+          <label for="hide-descriptions">
+            <i class="fas fa-fw fa-bars" title="Show hide library details"></i>
+            <i class="fas fa-fw fa-th-list" title="Show library details"></i>
           </label>
         </nav>
         <ul class="support-listing header" iterate="implementations">
@@ -48,10 +53,10 @@
           </article>
         </li>
       </ul>
+      <footer>
+        Made by <a href="https://shinmera.com">Nicolas Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>.
+      </footer>
     </main>
-    <footer>
-      Made by <a href="https://shinmera.com">Nicolas Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>.
-    </footer>
     <script type="text/javascript" src="search.js"></script>
   </body>
 </html>
