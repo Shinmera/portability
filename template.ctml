@@ -35,7 +35,7 @@
             <ul class="support-listing" iterate="support-table">
               <li class="support" lquery="(add-class implementation) (add-class (when (unmaintained-p implementation) :unmaintained)) (attr :title implementation :style (support-style *)) (data :completeness completeness)">
                 <span class="implementation name" lquery="(text implementation)">UNKCL</span>
-                <span class="completeness" lquery="(text completeness)">1.0</span>
+                <span class="completeness" lquery="(text (completeness% *))">1.0</span>
                 <c:when test="notes">
                   <a class="note" lquery="(attr :href (link *))">*</a>
                 </c:when>

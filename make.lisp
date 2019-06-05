@@ -50,6 +50,9 @@
 (defmethod link (thing)
   (format NIL "#~a" (id thing)))
 
+(defun completeness% (support)
+  (format NIL "~d%" (round (* 100 (completeness support)))))
+
 (defclass library ()
   ((name :initarg :name :reader name)
    (link :initarg :link :reader link)
