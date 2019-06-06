@@ -78,3 +78,8 @@
  :link "https://github.com/sionescu/static-vectors"
  :description "Simple arrays that don't move in memory and can be shared with foreign systems."
  :support (:allegro :ccl :clasp :cmucl :ecl :lispworks :sbcl))
+
+(trivial-gray-streams
+ :link "https://github.com/trivial-gray-streams/trivial-gray-streams"
+ :description "Custom stream classes through a CLOS protocol."
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mocl :sbcl))
