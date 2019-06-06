@@ -52,7 +52,7 @@
 (usocket
  :link "https://common-lisp.net/project/usocket/"
  :description "POSIX/BSD sockets to establish TCP or UPD connections and servers."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mcl :mocl :sbcl :scl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :genera :lispworks :mcl :mocl :sbcl :scl))
 
 (cffi
  :link "https://common-lisp.net/project/cffi/"
