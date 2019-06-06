@@ -73,3 +73,8 @@
  :link "https://github.com/alex-gutev/cl-environments"
  :description "Environment introspection as described in CLtL2."
  :support (:allegro :ccl :cmucl :lispworks :sbcl))
+
+(static-vectors
+ :link "https://github.com/sionescu/static-vectors"
+ :description "Simple arrays that don't move in memory and can be shared with foreign systems."
+ :support (:allegro :ccl :clasp :cmucl :ecl :lispworks :sbcl))
