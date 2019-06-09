@@ -88,3 +88,8 @@
  :link "https://github.com/trivial-gray-streams/trivial-gray-streams"
  :description "Custom stream classes through a CLOS protocol."
  :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mocl :sbcl))
+
+(shut-it-down
+ :link "http://verisimilitudes.net/2017-12-30"
+ :description "Allows quitting the Lisp process."
+ :support (:abcl :allegro :ccl :clasp :clisp :corman :ecl :gcl :lispworks :mcl :mkcl :mocl :sbcl :scl :xcl))
