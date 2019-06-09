@@ -91,5 +91,5 @@
 
 (shut-it-down
  :link "http://verisimilitudes.net/2017-12-30"
- :description "Allows quitting the Lisp process."
+ :description "Allow for exiting the Lisp process."
  :support (:abcl :allegro :ccl :clasp :clisp :corman :ecl :gcl :lispworks :mcl :mkcl :mocl :sbcl :scl :xcl))
