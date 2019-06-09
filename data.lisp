@@ -1,7 +1,12 @@
 (float-features
  :link "https://shinmera.github.io/float-features"
  :description "IEEE floating point number extensions such as infinities, NaN handling, and trap masking."
- :support (:abcl :allegro :ccl :clasp :cmucl :ecl :lispworks :mkcl :sbcl))
+ :support (:abcl :cmucl :ecl :ccl :sbcl
+           (:allegro :completion 0.9)
+           (:clasp :completion 0.9)
+           (:clisp :completion 0.1)
+           (:lispworks :completion 0.9)
+           (:mkcl :completion 0.9)))
 
 (trivial-arguments
  :link "https://shinmera.github.io/trivial-arguments"
@@ -16,7 +21,7 @@
 (definitions
  :link "https://shinmera.github.io/definitions"
  :description "Portable definitions reflection library, including source location tracking."
- :default-completeness 0.75
+ :default-completion 0.75
  :support (:ccl :clasp :sbcl))
 
 (dissect
