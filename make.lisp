@@ -22,24 +22,26 @@
 (defclass support ()
   ((library :initarg :library :reader library)
    (implementation :initarg :implementation :reader implementation)
-   (completeness :initarg :completeness :reader completeness)
+   (completion :initarg :completion :reader completion)
    (notes :initarg :notes :reader notes))
   (:default-initargs
    :library (error "LIBRARY required.")
    :implementation (error "IMPLEMENTATION required.")
-   :completeness 0.0
+   :completion 1.0
    :notes NIL))
 
-(defun make-support-table (library support &optional (default-completeness 0.0))
-  (loop for implementation in *known-implementations*
-        for part = (find-implementation-part support implementation)
-        collect (if part
-                    (destructuring-bind (name &key (completeness 1.0) notes) (if (listp part) part (list part))
-                      (make-instance 'support :library library :implementation name :completeness completeness :notes notes))
-                    (make-instance 'support :library library :implementation implementation :completeness default-completeness))))
+(defun make-support-table (library support &optional (default-completion 0.0))
+  (sort
+   (loop for implementation in *known-implementations*
+         for part = (find-implementation-part support implementation)
+         collect (if part
+                     (destructuring-bind (name &rest initargs) (if (listp part) part (list part))
+                       (apply #'make-instance 'support :library library :implementation name initargs))
+                     (make-instance 'support :library library :implementation implementation :completion default-completion)))
+   #'string< :key #'implementation))
 
 (defun support-style (support)
-  (let ((value (floor (* 255 (completeness support)))))
+  (let ((value (floor (* 255 (completion support)))))
     (format NIL "background: rgb(~d,~d,0)" (- 255 value) value)))
 
 (defmethod id ((support support))
@@ -50,8 +52,8 @@
 (defmethod link (thing)
   (format NIL "#~a" (id thing)))
 
-(defun completeness% (support)
-  (format NIL "~d%" (round (* 100 (completeness support)))))
+(defun completion% (support)
+  (format NIL "~d%" (round (* 100 (completion support)))))
 
 (defclass library ()
   ((name :initarg :name :reader name)
@@ -63,8 +65,8 @@
    :link NIL
    :description NIL))
 
-(defmethod initialize-instance :after ((library library) &key support (default-completeness 0.0))
-  (setf (slot-value library 'support-table) (make-support-table library support default-completeness)))
+(defmethod initialize-instance :after ((library library) &key support (default-completion 0.0))
+  (setf (slot-value library 'support-table) (make-support-table library support default-completion)))
 
 (defun make-library (entry)
   (destructuring-bind (name &rest initargs) entry
