@@ -37,7 +37,7 @@
 (trivial-features
  :link "https://github.com/trivial-features/trivial-features"
  :description "Standardised platform features for CPU architectures and operating systems."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mcl :mkcl :mocl :sbcl :scl :xcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mcl :mezzano :mkcl :mocl :sbcl :scl :xcl))
 
 (bordeaux-threads
  :link "https://github.com/sionescu/bordeaux-threads"
