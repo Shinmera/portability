@@ -67,7 +67,7 @@
 (trivial-backtrace
  :link "https://common-lisp.net/project/trivial-backtrace/"
  :description "Printing the current stack trace to a string."
- :support (:allegro :ccl :clisp :cmucl :lispworks :mcl :sbcl :scl))
+ :support (:allegro :ccl :clasp :clisp :cmucl :lispworks :mcl :sbcl :scl))
 
 (trivial-cltl2
  :link "https://github.com/Zulu-Inuoe/trivial-cltl2"
