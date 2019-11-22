@@ -77,7 +77,7 @@
 (cl-environments
  :link "https://github.com/alex-gutev/cl-environments"
  :description "Environment introspection as described in CLtL2."
- :support (:allegro :ccl :cmucl :lispworks :sbcl))
+ :support (:abcl :allegro :ccl :clisp :cmucl :ecl :lispworks :sbcl))
 
 (static-vectors
  :link "https://github.com/sionescu/static-vectors"
