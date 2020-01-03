@@ -56,6 +56,11 @@
 (defun completion% (support)
   (format NIL "~d%" (round (* 100 (completion support)))))
 
+(defun format-absolute-time (&optional (time (get-universal-time)))
+  (multiple-value-bind (s m h dd mm yy) (decode-universal-time time 0)
+    (declare (ignore s m h))
+    (format NIL "~4,'0d.~2,'0d.~2,'0d" yy mm dd)))
+
 (defclass library ()
   ((name :initarg :name :reader name)
    (link :initarg :link :reader link)

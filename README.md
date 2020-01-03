@@ -18,5 +18,7 @@ Please see the `data.lisp` file. All the data should be in there and follow this
 
 If there is a new library, please contribute a corresponding entry. If you are the maintainer of a library and notice that your entry is outdated, please send a [PR](https://github.com/Shinmera/portability/pulls) with an update. You should be able to [directly edit](https://github.com/Shinmera/portability/blob/master/data.lisp) the file on GitHub to make that convenient.
 
+When you push or send a PR, GitHub should automatically run CI to generate the `index.html` file based on the new data and push the result to the `gh-pages` branch. This ensures that no manual steps need to be performed to keep the public website up to date.
+
 # Compiling
 If you have SBCL, simply call `make`. Otherwise, `(load "make.lisp")` and call `(make)`.
