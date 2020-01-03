@@ -1,0 +1,89 @@
+(html
+ :font-family sans-serif
+ (body :margin 0
+       :overflow-y scroll))
+(a :text-decoration none)
+(a[href] :color (hex 0088EE))
+((:and a :hover) :text-decoration underline)
+(main
+ :margin 1em
+ (>input[type=checkbox] :display none)
+ ("#hide-unmaintained:checked~header label[for=hide-unmaintained]"
+  (.fa-eye :display block)
+  (.fa-eye-slash :display none))
+ ((:or "#hide-unmaintained:checked~.libraries .support.unmaintained"
+       "#hide-unmaintained:checked~header .support.unmaintained")
+  :display none)
+ ("#hide-descriptions:checked~header label[for=hide-descriptions]"
+  (.fa-bars :display none)
+  (.fa-th-list :display block))
+ ((:or "#hide-descriptions:checked~.libraries .description"
+       "#hide-descriptions:checked~.libraries .notes")
+  :display none)
+ (nav
+  :display flex
+  :align-items center
+  (input.filter
+   :flex-grow 1
+   :font-size 2em
+   :padding 0.2em)
+  (label
+   :user-select none
+   :font-size 2em
+   :margin 0 0.2em
+   (.fa-eye :display none)
+   (.fa-eye-slash :display block)
+   (.fa-bars :display block)
+   (.fa-th-list :display none)))
+ ((:or ul.libraries ul.support-listing)
+  :list-style none
+  :margin 0 :padding 0)
+ (.support-listing.header
+  :padding 1em 1em 1em 15%
+  (.support
+   :display flex
+   :align-items flex-end
+   :justify-content center
+   (.name
+    :font-size 0.75em
+    :transform rotate -30deg)))
+ (.library
+  :display flex
+  :flex-wrap wrap
+  :align-items center
+  (h2
+   :width 15%
+   :font-size 1.0em
+   :margin 0
+   :text-transform lowercase)
+  (.support-listing
+   :width 85%)
+  (.description
+   :width 100%
+   :padding 0 1em)
+  (.notes
+   :width 100%
+   :margin 0.5em 0
+   (.note
+    (.name
+     :display inline-block
+     :margin 0 0.5em 0 0)
+    ((:and .name :after)
+     :content ":"))))
+ (ul.support-listing
+  :display flex
+  (.support
+   :min-width 3em
+   :max-width 3em
+   :padding 0.2em
+   :margin 0.1em
+   :text-align center))
+ (.support[data-completion]
+  (.name :display none)
+  (.note
+   :font-weight bold)))
+(footer
+ :margin 1em 0 0 0
+ :text-align center
+ (a :display inline-block
+    :margin 0 0.2em))
