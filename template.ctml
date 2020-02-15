@@ -9,7 +9,7 @@
   <body>
     <main>
       <input type="checkbox" id="hide-unmaintained" checked />
-      <input type="checkbox" id="hide-descriptions" />
+      <input type="checkbox" id="hide-descriptions" checked />
       <header>
         <nav>
           <input type="text" class="filter" placeholder="Find..." autofocus />
