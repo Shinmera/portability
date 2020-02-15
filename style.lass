@@ -73,11 +73,29 @@
  (ul.support-listing
   :display flex
   (.support
-   :min-width 3em
+   :position relative
+   :overflow visible
    :max-width 3em
+   :min-width 3em
    :padding 0.2em
    :margin 0.1em
-   :text-align center))
+   :text-align center
+   (.more :font-weight bold)
+   ((:or .library-version .implementation-version)
+    :display none
+    :position absolute
+    :right -3em
+    :background white
+    :padding 0.1em
+    :width 3em
+    :z-index 10)
+   (.library-version
+    :bottom -1em)
+   (.implementation-version
+    :top -1em))
+  ((:and .support :hover)
+   ((:or .library-version .implementation-version)
+    :display block)))
  (.support[data-completion]
   (.name :display none)
   (.note
