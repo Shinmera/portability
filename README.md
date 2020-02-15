@@ -13,6 +13,8 @@ Please see the `data.lisp` file. All the data should be in there and follow this
  :support (:supported-implementation
            (:supported-implementation-with-caveat
             :completeness 0.8                      ; How much of the API is supported (approx.)
+            :since-library-version "1.0.0"         ; Which library version started supporting the implementation
+            :since-implementation-version "1.0.0"  ; Which implementation version started supporting this feature
             :notes "Some caveat notes")))          ; Notes on what is not supported / other quirks
 ```
 

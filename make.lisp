@@ -24,11 +24,15 @@
   ((library :initarg :library :reader library)
    (implementation :initarg :implementation :reader implementation)
    (completion :initarg :completion :reader completion)
+   (since-library-version :initarg :since-library-version :reader since-library-version)
+   (since-implementation-version :initarg :since-implementation-version :reader since-implementation-version)
    (notes :initarg :notes :reader notes))
   (:default-initargs
    :library (error "LIBRARY required.")
    :implementation (error "IMPLEMENTATION required.")
    :completion 1.0
+   :since-library-version NIL
+   :since-implementation-version NIL
    :notes NIL))
 
 (defun make-support-table (library support &optional (default-completion 0.0))
