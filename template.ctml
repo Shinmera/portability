@@ -31,34 +31,36 @@
       <ul class="libraries" iterate="libraries">
         <li>
           <article class="library" lquery="(attr :id (id *)) (add-class name)">
-            <h2 class="name"><a lquery="(attr :href link) (text name)">LIBRARY</a></h2>
-            <ul class="support-listing" iterate="support-table">
-              <li class="support" lquery="(add-class implementation) (add-class (when (unmaintained-p implementation) :unmaintained)) (attr :title implementation :style (support-style *)) (data :completion completion)">
-                <span class="implementation name" lquery="(text implementation)">UNKCL</span>
-                <span class="completion" lquery="(text (completion% *))">1.0</span>
-                <c:when test="(or notes since-library-version since-implementation-version)"><span class="more">*</span></c:when>
-                <c:when test="since-library-version">
-                  <sub class="library-version" lquery="(text since-library-version)"></sub>
-                </c:when>
-                <c:when test="since-implementation-version">
-                  <sup class="implementation-version" lquery="(text since-implementation-version)"></sup>
-                </c:when>
-                <c:when test="notes">
-                  <a class="note" lquery="(attr :href (link *))">*</a>
-                </c:when>
-              </li>
-            </ul>
+            <header>
+              <h2 class="name"><a lquery="(attr :href link) (text name)">LIBRARY</a></h2>
+              <ul class="support-listing" iterate="support-table">
+                <li class="support" lquery="(add-class implementation) (add-class (when (unmaintained-p implementation) :unmaintained)) (attr :title implementation :style (support-style *)) (data :completion completion)">
+                  <span class="implementation name" lquery="(text implementation)">UNKCL</span>
+                  <span class="completion" lquery="(text (completion% *))">1.0</span>
+                  <c:when test="(or notes since-library-version since-implementation-version)"><span class="more">*</span></c:when>
+                  <c:when test="since-library-version">
+                    <sub class="library-version" lquery="(text since-library-version)"></sub>
+                  </c:when>
+                  <c:when test="since-implementation-version">
+                    <sup class="implementation-version" lquery="(text since-implementation-version)"></sup>
+                  </c:when>
+                  <c:when test="notes">
+                    <a class="note" lquery="(attr :href (link *))">*</a>
+                  </c:when>
+                </li>
+              </ul>
+            </header>
             <p class="description" lquery="(text description)">Description</p>
             <ol class="notes" iterate="support-table">
               <c:when test="(or notes since-library-version since-implementation-version)">
                 <li class="note" lquery="(attr :id (id *)) (text notes)">
                   <header>
-                    <c:when test="since-library-version">
-                      <span class="library-version" lquery="(text since-library-version)"></span>
+                    <c:when test="since-implementation-version">
+                      <span class="implementation-version" lquery="(text since-implementation-version)"></span>
                     </c:when>
                     <span class="implementation name" lquery="(text implementation)">UNKL</span>
-                    <c:when test="since-implementation-version">
-                      Since <span class="implementation-version" lquery="(text since-implementation-version)"></span>
+                    <c:when test="since-library-version">
+                      Since <span class="library-version" lquery="(text since-library-version)"></span>
                     </c:when>
                   </header>
                   Notes
