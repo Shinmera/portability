@@ -26,7 +26,9 @@
   (input.filter
    :flex-grow 1
    :font-size 2em
-   :padding 0.2em)
+   :padding 0.2em
+   :background (hex F5F5F5)
+   :border 1px solid (hex E0E0E0))
   (label
    :user-select none
    :font-size 2em
@@ -48,28 +50,37 @@
     :font-size 0.75em
     :transform rotate -30deg)))
  (.library
-  :display flex
-  :flex-wrap wrap
-  :align-items center
-  (h2
-   :width 15%
-   :font-size 1.0em
-   :margin 0
-   :text-transform lowercase)
-  (.support-listing
-   :width 85%)
+  (header
+   :display flex
+   :flex-wrap wrap
+   :align-items center
+   :padding 0.1em
+   (h2
+    :width 15%
+    :font-size 1.0em
+    :margin 0
+    :text-transform lowercase)
+   (.support-listing
+    :width 85%))
   (.description
    :width 100%
    :padding 0 1em)
   (.notes
    :width 100%
    :margin 0.5em 0
+   ((:and (:or .library-version .implementation-version) (:or :before :after))
+    :content " "
+    :white-space pre)
    (.note
     (.name
      :display inline-block
      :margin 0 0.5em 0 0)
     ((:and .name :after)
      :content ":"))))
+ ((:and .library :target)
+  (header
+   :background (hex 0088EE)
+   (a :color (hex FFFFFF))))
  (ul.support-listing
   :display flex
   (.support
@@ -104,4 +115,7 @@
  :margin 1em 0 0 0
  :text-align center
  (a :display inline-block
-    :margin 0 0.2em))
+    :margin 0 0.2em)
+ ((:and time (:or :before :after))
+  :content " "
+  :white-space pre))
