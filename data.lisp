@@ -102,7 +102,7 @@
 (trivial-package-local-nicknames
  :link "https://github.com/phoe/trivial-package-local-nicknames"
  :description "Package nicknames that are local to another package, avoiding package naming conflicts."
- :support (:abcl :allegro :ccl :clasp :ecl :lispworks :sbcl))
+ :support (:abcl :allegro (:ccl :since-implementation-version "1.12") :clasp :ecl (:lispworks :since-implementation-version "7.2") :sbcl))
 
 (global-vars
  :link "https://github.com/lmj/global-vars"
