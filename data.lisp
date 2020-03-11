@@ -113,3 +113,10 @@
  :link "https://github.com/scymtym/trivial-with-current-source-form"
  :description "Allows macro writers to provide better feedback to macro users when errors are signaled during macroexpansion."
  :support ((:sbcl :since-implementation-version "1.3.13" :since-library-version "1.0.0")))
+
+(trivial-file-size
+ :link "https://github.com/ruricolist/trivial-file-size"
+ :description "Query a file's size from its metadata."
+ :support (:sbcl :ccl :cmucl :clisp :allegro :abcl :gcl
+                 (:lispworks :completion 0.5)
+                 (:ecl :completion 0.5)))
