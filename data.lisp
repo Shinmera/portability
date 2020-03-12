@@ -117,6 +117,4 @@
 (trivial-file-size
  :link "https://github.com/ruricolist/trivial-file-size"
  :description "Query a file's size from its metadata."
- :support (:sbcl :ccl :cmucl :clisp :allegro :abcl :gcl
-                 (:lispworks :completion 0.5)
-                 (:ecl :completion 0.5)))
+ :support (:abcl :allegro :ccl :clisp :cmucl (:ecl :completion 0.5)) :gcl (:lispworks :completion 0.5) :sbcl)
