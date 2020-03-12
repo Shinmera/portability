@@ -118,3 +118,8 @@
  :link "https://github.com/ruricolist/trivial-file-size"
  :description "Query a file's size from its metadata."
  :support (:abcl :allegro :ccl :clisp :cmucl (:ecl :completion 0.5)) :gcl (:lispworks :completion 0.5) :sbcl)
+
+(introspect-environment
+ :link "https://github.com/Bike/introspect-environment"
+ :description "Compile-time introspection of environments."
+ :support (:ccl :cmucl :sbcl))
