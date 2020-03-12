@@ -123,3 +123,8 @@
  :link "https://github.com/Bike/introspect-environment"
  :description "Compile-time introspection of environments."
  :support (:ccl :cmucl :sbcl))
+
+(trivial-macroexpand-all
+ :link "https://github.com/cbaggers/trivial-macroexpand-all"
+ :description "Provide a portable macroexpand-all function."
+ :support (:abcl :allegro :ccl :clisp :cmucl :corman :ecl :lispworks :mkcl :sbcl :scl))
