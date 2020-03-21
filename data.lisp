@@ -113,3 +113,18 @@
  :link "https://github.com/scymtym/trivial-with-current-source-form"
  :description "Allows macro writers to provide better feedback to macro users when errors are signaled during macroexpansion."
  :support ((:sbcl :since-implementation-version "1.3.13" :since-library-version "1.0.0")))
+
+(trivial-file-size
+ :link "https://github.com/ruricolist/trivial-file-size"
+ :description "Query a file's size from its metadata."
+ :support (:abcl :allegro :ccl :clisp :cmucl (:ecl :completion 0.5) :gcl (:lispworks :completion 0.5) :sbcl))
+
+(introspect-environment
+ :link "https://github.com/Bike/introspect-environment"
+ :description "Compile-time introspection of environments."
+ :support (:ccl :cmucl :sbcl))
+
+(trivial-macroexpand-all
+ :link "https://github.com/cbaggers/trivial-macroexpand-all"
+ :description "Provide a portable macroexpand-all function."
+ :support (:abcl :allegro :ccl :clisp :cmucl :corman :ecl :lispworks :mkcl :sbcl :scl))
