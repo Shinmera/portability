@@ -1,9 +1,8 @@
 (float-features
  :link "https://shinmera.github.io/float-features"
  :description "IEEE floating point number extensions such as infinities, NaN handling, and trap masking."
- :support (:abcl :cmucl :ecl :ccl :sbcl
+ :support (:abcl :clasp :cmucl :ecl :ccl :sbcl
            (:allegro :completion 0.9)
-           (:clasp :completion 0.9)
            (:clisp :completion 0.1)
            (:lispworks :completion 0.9)
            (:mkcl :completion 0.9)))
