@@ -26,7 +26,7 @@
 (dissect
  :link "https://shinmera.github.io/dissect"
  :description "Capturing the call stack and inspecting frames."
- :support (:abcl :allegro :ccl :clisp :ecl :sbcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :ecl :sbcl))
 
 (trivial-garbage
  :link "https://common-lisp.net/project/trivial-garbage/"
