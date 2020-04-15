@@ -127,3 +127,9 @@
  :link "https://github.com/cbaggers/trivial-macroexpand-all"
  :description "Provide a portable macroexpand-all function."
  :support (:abcl :allegro :ccl :clisp :cmucl :corman :ecl :lispworks :mkcl :sbcl :scl))
+
+(trivial-custom-debugger
+ :link "https://github.com/phoe/trivial-custom-debugger"
+ :description "Allows arbitrary functions to become the standard Lisp debugger"
+ :support (:abcl :allegro :ccl :clisp :clasp :ecl :lispworks :sbcl))
+ 
