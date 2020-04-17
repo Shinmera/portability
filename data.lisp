@@ -96,7 +96,7 @@
 (trivial-extensible-sequences
  :link "https://shinmera.github.io/trivial-extensible-sequences"
  :description "Custom sequence classes through a CLOS protocol."
- :support (:abcl :sbcl))
+ :support (:abcl :clasp :sbcl))
 
 (trivial-package-local-nicknames
  :link "https://github.com/phoe/trivial-package-local-nicknames"
