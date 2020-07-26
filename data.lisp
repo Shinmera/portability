@@ -41,12 +41,12 @@
 (bordeaux-threads
  :link "https://github.com/sionescu/bordeaux-threads"
  :description "Basic multithreading constructs including locks and condition variables."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :genera :lispworks :mcl :mkcl :scl :sbcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :genera :lispworks :mcl :mezzano :mkcl :scl :sbcl))
 
 (closer-mop
  :link "https://github.com/pcostanza/closer-mop"
  :description "For the common Meta-Object Protocol extension to CLOS."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :lispworks :mcl :sbcl :sbcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :lispworks :mcl :mezzano :sbcl :sbcl))
 
 (uiop
  :link "https://common-lisp.net/project/asdf/uiop.html"
@@ -56,7 +56,7 @@
 (usocket
  :link "https://common-lisp.net/project/usocket/"
  :description "POSIX/BSD sockets to establish TCP or UPD connections and servers."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :genera :lispworks :mcl :mocl :sbcl :scl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :genera :lispworks :mcl (:mezzano :completion 0.75) :mocl :sbcl :scl))
 
 (cffi
  :link "https://common-lisp.net/project/cffi/"
