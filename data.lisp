@@ -10,7 +10,7 @@
 (trivial-arguments
  :link "https://shinmera.github.io/trivial-arguments"
  :description "Retrieve the lambda-list of a function."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :sbcl :scl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mezzano :sbcl :scl))
 
 (atomics
  :link "https://shinmera.github.io/atomics"
