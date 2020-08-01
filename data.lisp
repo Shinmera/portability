@@ -31,7 +31,7 @@
 (trivial-garbage
  :link "https://common-lisp.net/project/trivial-garbage/"
  :description "Access to GC related tasks such as weak pointers, weak tables, and finalizers."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :sbcl :scl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mezzano :sbcl :scl))
 
 (trivial-features
  :link "https://github.com/trivial-features/trivial-features"
@@ -86,7 +86,7 @@
 (trivial-gray-streams
  :link "https://github.com/trivial-gray-streams/trivial-gray-streams"
  :description "Custom stream classes through a CLOS protocol."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mocl :sbcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mezzano :mocl :sbcl))
 
 (shut-it-down
  :link "http://verisimilitudes.net/2017-12-30"
@@ -132,5 +132,5 @@
 (trivial-custom-debugger
  :link "https://github.com/phoe/trivial-custom-debugger"
  :description "Allows arbitrary functions to become the standard Lisp debugger"
- :support (:abcl :allegro :ccl :clisp :clasp :ecl :lispworks :sbcl))
+ :support (:abcl :allegro :ccl :clisp :clasp :ecl :lispworks :mezzano :sbcl))
  
