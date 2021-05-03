@@ -3,9 +3,10 @@
 
 (defvar *this* #.(or *load-pathname* (error "Please LOAD this file.")))
 (defparameter *known-implementations*
-  (sort '(:abcl :allegro :ccl :clasp :clisp :corman :ecl
-          :gcl :genera :jscl :lispworks :mcl :mkcl :mocl
-          :mezzano :sbcl :scl :sicl :xcl)
+  (sort '(:abcl :allegro :ccl :clasp :clisp :cmucl
+          :corman :ecl :gcl :genera :jscl :lispworks
+          :mcl :mkcl :mocl :mezzano :sbcl :scl :sicl
+          :xcl)
         #'string<))
 
 (defun unmaintained-p (implementation)
