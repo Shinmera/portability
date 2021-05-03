@@ -1,3 +1,8 @@
+(clast
+ :link "http://clast.sourceforge.net/"
+ :description "Common Lisp Abstract Syntax Tree introspection (with CLtL2 environments)."
+ :support (:allegro :lispworks :ccl :cmucl :lispworks :sbcl))
+
 (float-features
  :link "https://shinmera.github.io/float-features"
  :description "IEEE floating point number extensions such as infinities, NaN handling, and trap masking."
