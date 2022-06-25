@@ -143,3 +143,13 @@
  :link "https://github.com/yitzchak/trivial-package-locks"
  :description "Package locks protect against unintentional modifications of a package"
  :support (:allegro (:clisp :completion 0.75) (:cmucl :completion 0.75) (:ecl :completion 0.75) :sbcl))
+
+(trivial-ed-functions
+ :link "https://github.com/yitzchak/trivial-ed-functions"
+ :description "Provide hook functions called by ED function to delegate editing of file or object."
+ :support (:abcl :allegro :ccl :clasp :ecl :mezzano :sbcl))
+
+(trivial-inspector-hook
+ :link "https://github.com/yitzchak/trivial-inspector-hook"
+ :description "Provide *INSPECTOR-HOOK* (CDR-6) that is called by the INSPECT function to delegate inspection."
+ :support (:abcl :allegro :ccl :clasp :ecl :mezzano :sbcl))
