@@ -139,3 +139,7 @@
  :description "Allows arbitrary functions to become the standard Lisp debugger"
  :support (:abcl :allegro :ccl :clisp :clasp :ecl :lispworks :mezzano :sbcl))
  
+(trivial-package-locks
+ :link "https://github.com/yitzchak/trivial-package-locks"
+ :description "Package locks protect against unintentional modifications of a package"
+ :support (:allegro (:clisp :completion 0.75) (:cmucl :completion 0.75) (:ecl :completion 0.75) :sbcl))
