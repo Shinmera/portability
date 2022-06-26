@@ -76,7 +76,7 @@
 (trivial-cltl2
  :link "https://github.com/Zulu-Inuoe/trivial-cltl2"
  :description "Some of the extensions described in CLtL2 that were not included in ANSI."
- :support (:abcl :allegro :ccl :cmucl (:ecl :completion 0.125) :sbcl))
+ :support (:abcl :allegro :ccl (:clasp :completion 0.875) :cmucl (:ecl :completion 0.125) :sbcl))
 
 (cl-environments
  :link "https://github.com/alex-gutev/cl-environments"
@@ -127,7 +127,7 @@
 (introspect-environment
  :link "https://github.com/Bike/introspect-environment"
  :description "Compile-time introspection of environments."
- :support (:ccl :cmucl :sbcl))
+ :support (:ccl :clasp :cmucl :sbcl))
 
 (trivial-macroexpand-all
  :link "https://github.com/cbaggers/trivial-macroexpand-all"
