@@ -5,12 +5,11 @@
 (defparameter *known-implementations*
   (sort '(:abcl :allegro :ccl :clasp :clisp :cmucl
           :corman :ecl :gcl :genera :jscl :lispworks
-          :mcl :mkcl :mocl :mezzano :sbcl :scl :sicl
-          :xcl)
+          :mcl :mkcl :mocl :mezzano :sbcl :scl :xcl)
         #'string<))
 
 (defun unmaintained-p (implementation)
-  (find implementation '(:gcl :genera :mcl :scl :xcl)))
+  (find implementation '(:gcl :genera :mcl :scl :xcl :mocl)))
 
 (defun file (relative)
   (merge-pathnames relative (make-pathname :name NIL :type NIL :version NIL :defaults *this*)))
