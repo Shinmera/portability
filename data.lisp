@@ -96,7 +96,7 @@
 (shut-it-down
  :link "http://verisimilitudes.net/2017-12-30"
  :description "Allow for exiting the Lisp process."
- :support (:abcl :allegro :ccl :clasp :clisp :corman :ecl :gcl :lispworks :mcl :mkcl :mocl :sbcl :scl :xcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :gcl :lispworks :mcl :mkcl :sbcl :scl :xcl))
 
 (trivial-extensible-sequences
  :link "https://shinmera.github.io/trivial-extensible-sequences"
