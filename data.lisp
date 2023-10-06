@@ -153,3 +153,9 @@
  :link "https://github.com/yitzchak/trivial-inspector-hook"
  :description "Provide *INSPECTOR-HOOK* (CDR-6) that is called by the INSPECT function to delegate inspection."
  :support (:abcl :allegro :ccl :clasp :ecl :mezzano :sbcl))
+
+(trivial-deprecate
+ :link "https://github.com/shinmera/trivial-deprecate"
+ :description "This library implements a simple deprecation mechanism."
+ :default-completion 0.75
+ :support (:sbcl))
