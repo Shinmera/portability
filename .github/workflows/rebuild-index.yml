@@ -16,7 +16,7 @@ jobs:
     - name: Install Quicklisp
       run: |
         curl -o ~/quicklisp.lisp https://beta.quicklisp.org/quicklisp.lisp
-        sbcl --load ~/quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(ql-util:without-prompting (ql:add-to-init-file))' --quit
+        sbcl --load ~/quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(ql-util:without-prompting (ql:add-to-init-file))' --eval '(ql-dist:install-dist "http://dist.shirakumo.org/shirakumo.txt")' --quit
     - name: Rebuild the index
       run: |
         make
