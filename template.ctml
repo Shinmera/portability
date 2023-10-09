@@ -71,7 +71,7 @@
         </li>
       </ul>
       <footer>
-        Made by <a href="https://shinmera.com">Nicolas Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>. Last updated <time lquery="(text (format-absolute-time))">DATE</time>
+        Made by <a href="https://shinmera.com">Yukari Hafner</a> and <a href="https://github.com/shinmera/portability">contributors</a>. Last updated <time lquery="(text (format-absolute-time))">DATE</time>
       </footer>
     </main>
     <script type="text/javascript" src="search.js"></script>
