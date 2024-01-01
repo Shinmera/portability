@@ -91,7 +91,12 @@
 (trivial-gray-streams
  :link "https://github.com/trivial-gray-streams/trivial-gray-streams"
  :description "Custom stream classes through a CLOS protocol."
- :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mezzano :mocl :sbcl))
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :genera :lispworks :mezzano :mkcl :mocl :sbcl))
+
+(nontrivial-gray-streams
+ :link "https://github.com/yitzchak/nontrivial-gray-streams"
+ :description "A compatibility layer for Gray streams including extensions."
+ :support (:abcl :allegro :ccl :clasp :clisp :cmucl :ecl :lispworks :mezzano :mkcl :sbcl))
 
 (shut-it-down
  :link "http://verisimilitudes.net/2017-12-30"
