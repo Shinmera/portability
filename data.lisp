@@ -4,7 +4,7 @@
  :support (:allegro :lispworks :ccl :cmucl :lispworks :sbcl))
 
 (float-features
- :link "https://shinmera.github.io/float-features"
+ :link "https://shinmera.com/docs/float-features"
  :description "IEEE floating point number extensions such as infinities, NaN handling, and trap masking."
  :support (:abcl :clasp :cmucl :ecl :ccl :mezzano :sbcl
            (:allegro :completion 0.9)
@@ -13,23 +13,23 @@
            (:mkcl :completion 0.9)))
 
 (trivial-arguments
- :link "https://shinmera.github.io/trivial-arguments"
+ :link "https://shinmera.com/docs/trivial-arguments"
  :description "Retrieve the lambda-list of a function."
  :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :lispworks :mezzano :sbcl :scl))
 
 (atomics
- :link "https://shinmera.github.io/atomics"
+ :link "https://shinmera.com/docs/atomics"
  :description "Thin wrapper over atomic operators such as Compare and Swap (CAS)."
  :support (:allegro :ccl :clasp :ecl :lispworks :mezzano :sbcl))
 
 (definitions
- :link "https://shinmera.github.io/definitions"
+ :link "https://shinmera.com/docs/definitions"
  :description "Portable definitions reflection library, including source location tracking."
  :default-completion 0.75
  :support (:ccl :clasp :sbcl))
 
 (dissect
- :link "https://shinmera.github.io/dissect"
+ :link "https://shinmera.com/docs/dissect"
  :description "Capturing the call stack and inspecting frames."
  :support (:abcl :allegro :ccl :clasp :clisp :ecl :sbcl))
 
@@ -104,7 +104,7 @@
  :support (:abcl :allegro :ccl :clasp :clisp :cmucl :corman :ecl :gcl :lispworks :mcl :mkcl :sbcl :scl :xcl))
 
 (trivial-extensible-sequences
- :link "https://shinmera.github.io/trivial-extensible-sequences"
+ :link "https://shinmera.com/docs/trivial-extensible-sequences"
  :description "Custom sequence classes through a CLOS protocol."
  :support (:abcl :clasp :sbcl))
 
@@ -160,7 +160,7 @@
  :support (:abcl :allegro :ccl :clasp :ecl :mezzano :sbcl))
 
 (trivial-deprecate
- :link "https://github.com/shinmera/trivial-deprecate"
+ :link "https://shinmera.com/project/trivial-deprecate"
  :description "This library implements a simple deprecation mechanism."
  :default-completion 0.75
  :support (:sbcl))
